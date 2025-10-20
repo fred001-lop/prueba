@@ -1,0 +1,117 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+
+/* ----------------------------------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+    max-width: 525px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card-img{
+    flex: 1;
+}
+
+.card-img img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+
+}
+
+.card{
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.category{
+    text-transform: uppercase;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+    letter-spacing: 4px;
+    opacity: 0.7;
+}
+
+.card-content h1{
+    font-family: 'Fraunces';
+    line-height: 1;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: hsl(212, 21%, 14%);
+}
+
+.card-content p{
+    font-size: 0.9rem;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.card-price{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.price-new{
+    font-family: 'Fraunces';
+    font-size: 2rem;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+}
+
+.price-old{
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    opacity: 0.7;
+    font-size: 0.9rem;
+    
+}
+
+.card-btn{
+    border: none;
+    padding: 1rem;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-btn:hover{
+    background-color: hsl(158, 42%, 18%);
+}
