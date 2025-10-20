@@ -115,3 +115,18 @@ body{
 .card-btn:hover{
     background-color: hsl(158, 42%, 18%);
 }
+
+/*Media querys*/
+
+@media(max-width: 600px){
+    .container{
+        flex-direction: column;
+        max-width: 90%;
+        border-radius: 10px;
+    }
+
+    .card-img{
+        width: 100%;
+        height: auto;
+    }
+}
