@@ -129,4 +129,17 @@ body{
         width: 100%;
         height: auto;
     }
+
+    .card-img img{
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .card{
+        padding: 1.5rem;
+       
+    }
 }
