@@ -14,19 +14,22 @@
 body{
     font-family: 'Montserrat', sans-serif;
     display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: hsl(30, 38%, 92%);
     height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 
+
+
 .container{
+    max-width: 500px;
     display: flex;
     background-color: hsl(0, 0%, 100%);
-    max-width: 525px;
+    justify-content: center;
     border-radius: 10px;
-    overflow: hidden;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
 }
 
 .card-img{
@@ -36,78 +39,75 @@ body{
 .card-img img{
     width: 100%;
     height: 100%;
-    display: block;
     object-fit: cover;
-
+    display: block;
 }
 
 .card{
+    display: flex;
     flex: 1;
     padding: 2rem;
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    
+    flex-direction: column;
 }
 
 .category{
-    text-transform: uppercase;
     color: hsl(228, 12%, 48%);
-    margin-bottom: 1rem;
-    font-size: 0.875rem;
-    letter-spacing: 4px;
     opacity: 0.7;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.875rem;
+    font-weight: 500;
 }
 
 .card-content h1{
     font-family: 'Fraunces';
-    line-height: 1;
-    font-size: 2rem;
     margin-bottom: 1rem;
+    font-size: 2rem;
     color: hsl(212, 21%, 14%);
+    /* font-weight: 700; */
 }
 
 .card-content p{
-    font-size: 0.9rem;
+    line-height: 1.6;
+    font-size: 0.8rem;
     color: hsl(228, 12%, 48%);
     margin-bottom: 1.5rem;
-    line-height: 1.5;
 }
 
 .card-price{
     display: flex;
+    gap: 0.8rem;
     align-items: center;
-    gap: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .price-new{
     font-family: 'Fraunces';
+    color: hsl(158, 36%, 37%);
     font-size: 2rem;
     font-weight: 700;
-    color: hsl(158, 36%, 37%);
 }
 
 .price-old{
     color: hsl(228, 12%, 48%);
     text-decoration: line-through;
-    opacity: 0.7;
-    font-size: 0.9rem;
-    
+    font-size: .9rem;
 }
 
 .card-btn{
-    border: none;
-    padding: 1rem;
     background-color: hsl(158, 36%, 37%);
+    border: none;
+    padding: .8rem;
+    border-radius: 10px;
     color: hsl(0, 0%, 100%);
-    gap: 0.5rem;
+    gap: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 0.875rem;
-    border-radius: 10px;
-    font-weight: 600;
+    font-size: 0.8rem;
+    font-weight: 700;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -116,30 +116,8 @@ body{
     background-color: hsl(158, 42%, 18%);
 }
 
-/*Media querys*/
-
 @media(max-width: 600px){
     .container{
         flex-direction: column;
-        max-width: 90%;
-        border-radius: 10px;
-    }
-
-    .card-img{
-        width: 100%;
-        height: auto;
-    }
-
-    .card-img img{
-        width: 100%;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        height: auto;
-        object-fit: cover;
-    }
-
-    .card{
-        padding: 1.5rem;
-       
     }
 }
